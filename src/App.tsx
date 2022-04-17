@@ -10,6 +10,13 @@ function App() {
                 This blog is going to be a place for a bunch of cool stuff I
                 learn (or am going to learn).
             </h2>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Coding</li>
+                <li>Computers</li>
+                <li>Language</li>
+                <li>Fiction (mostly Sci-fi and fantasy) </li>
+            </ul>
         </>
     );
 }
