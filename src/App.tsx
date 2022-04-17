@@ -5,7 +5,8 @@ function App() {
         <>
             <h1>Welcome to Axiomatic</h1>
             <h2>
-                A blog by me, <a href='www.samridh.live'>Samridh</a>!<br />
+                A blog by me, <a href='https://www.samridh.live'>Samridh</a>!
+                <br />
                 This blog is going to be a place for a bunch of cool stuff I
                 learn (or am going to learn).
             </h2>
