@@ -12,8 +12,10 @@ export default function BlogPost({
     return (
         <>
             <h1>{title}</h1>
-            <b>{datePosted.toISOString()}</b>
-            <b>{dateEdited.toISOString()}</b>
+            <b>Posted on {datePosted.toDateString()}</b> <br />
+            {dateEdited.getTime() != datePosted.getTime() && (
+                <b>Last edited on {dateEdited.toDateString()}</b>
+            )}
             <p>{blurb}</p>
             <p>{content}</p>
         </>
