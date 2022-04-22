@@ -2,8 +2,15 @@
     margin: 10px 0;
 }
 
-.blog-post-card > a {
+.blog-post-card.alpha > a {
     background-color: var(--main-blue);
+}
+.blog-post-card.beta > a {
+    background-color: var(--main-pink);
+    /* background-color: var(--main-blue); */
+}
+
+.blog-post-card > a {
     border-radius: 10px;
     cursor: pointer;
     color: black !important;
@@ -17,8 +24,13 @@
     font-size: 2rem;
 }
 
-.blog-post-card .date-posted {
+.blog-post-card.alpha .date-posted {
     color: var(--main-pink);
+}
+
+.blog-post-card.beta .date-posted {
+    color: var(--main-blue);
+    /* color: var(--main-pink); */
 }
 
 /* .blog-post-card .blurb {

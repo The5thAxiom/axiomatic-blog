@@ -1,7 +1,7 @@
 export type BlogPostData = {
     title: string;
     id: string;
-    blurb: string;
+    blurb?: string;
     datePosted: Date;
     dateEdited: Date;
     content: JSX.Element;
@@ -11,7 +11,7 @@ export const posts: BlogPostData[] = [
     {
         title: "I Attended My First CTF Event and Here's What I Learned",
         id: 'cyber-defenders-ctf',
-        blurb: 'something somehting',
+        // blurb: '',
         datePosted: new Date(2022, 3, 21),
         dateEdited: new Date(2022, 3, 21),
         content: (

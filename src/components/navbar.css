@@ -1,9 +1,7 @@
 #navbar {
     background-color: black;
-    height: 10vh;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     user-select: none; /* supported by Chrome and Opera */
@@ -31,12 +29,40 @@
     justify-content: space-evenly;
 }
 
-#navbar-links > a.current-page {
-    color: var(--main-pink);
+#navbar-links > a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
 }
 
-#navbar-links > a.other-page {
-    color: var(--main-orange);
-    text-decoration: none;
+#navbar-links > a:hover {
+    color: var(--main-pink);
+}
+
+#navbar-links > a.current-page {
+    color: var(--main-pink);
+    border-bottom: var(--main-pink) 5px solid;
+    height: calc(100% - 5px);
+}
+
+/* #navbar-links > a.other-page {
+
+} */
+
+/* *** PCs *** */
+@media only screen and (min-width: 600px) {
+    #navbar {
+        flex-direction: row;
+        height: 10vh;
+    }
+}
+
+/* *** Phones *** */
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        height: 15vh;
+    }
 }

@@ -10,17 +10,22 @@ export default function BlogPostCard({
     title,
     datePosted,
     blurb,
-}: BlogPostData) {
+    className,
+}: BlogPostData & { className?: string }) {
     return (
-        <section className='blog-post-card'>
+        <section className={`blog-post-card ${className}`}>
             <NavLink to={`/post/${id}`}>
                 <span className='title'>{title}</span>
                 <br />
                 <span className='date-posted'>
                     Posted on {datePosted.toDateString()}
                 </span>
-                <br />
-                <span className='blurb'>{blurb}</span>
+                {blurb && (
+                    <>
+                        <br />
+                        <span className='blurb'>{blurb}</span>
+                    </>
+                )}
             </NavLink>
         </section>
     );

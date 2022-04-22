@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { idText } from 'typescript';
 import BlogPostCard from '../components/blogPostCard';
 import { posts } from '../posts';
 
@@ -13,15 +13,21 @@ export default function Home() {
                 well, I'll tell you when I figure it out, I promise :)
             </p>
             <h2>Recent Posts</h2>
-            {posts.length > 0 ? (
-                posts
-                    .reverse()
-                    .map((post, index) => (
-                        <BlogPostCard key={index} {...post} />
-                    ))
-            ) : (
-                <p>nothing found :(</p>
-            )}
+            <div className='blog-post-cards'>
+                {posts.length > 0 ? (
+                    posts
+                        .reverse()
+                        .map((post, index) => (
+                            <BlogPostCard
+                                key={index}
+                                {...post}
+                                className={index % 2 === 0 ? 'alpha' : 'beta'}
+                            />
+                        ))
+                ) : (
+                    <p>nothing found :(</p>
+                )}
+            </div>
         </>
     );
 }
