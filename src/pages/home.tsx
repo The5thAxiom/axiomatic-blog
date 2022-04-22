@@ -1,6 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { posts } from '../posts';
 
-function App() {
+export default function Home() {
     return (
         <>
             <h1>Welcome to Axiomatic</h1>
@@ -17,8 +19,16 @@ function App() {
                 <li>Language</li>
                 <li>Fiction (mostly Sci-fi and fantasy) </li>
             </ul>
+            <h2>Posts</h2>
+            {posts.reverse().map(post => (
+                <section id={post.id}>
+                    <h2>
+                        <NavLink to={`/post/${post.id}`}>{post.title}</NavLink>
+                    </h2>
+                    <b>{post.datePosted.toISOString()}</b>
+                    <p>{post.description}</p>
+                </section>
+            ))}
         </>
     );
 }
-
-export default App;
