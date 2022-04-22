@@ -4,17 +4,17 @@ import { BlogPostData } from '../posts';
 export default function BlogPost({
     title,
     id,
-    description,
+    blurb,
     datePosted,
     dateEdited,
     content,
 }: BlogPostData) {
     return (
         <>
-            <h1>Blog Post</h1>
+            <h1>{title}</h1>
             <b>{datePosted.toISOString()}</b>
             <b>{dateEdited.toISOString()}</b>
-            <p>{description}</p>
+            <p>{blurb}</p>
             <p>{content}</p>
         </>
     );

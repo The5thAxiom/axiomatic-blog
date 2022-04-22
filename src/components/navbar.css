@@ -1,13 +1,42 @@
-nav#navbar {
+#navbar {
     background-color: black;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
-.current-page {
-    color: var(--main-pink) !important;
+#navbar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar-heading {
+    color: var(--main-orange);
+    font-size: 2rem;
+    justify-content: center;
+}
+
+#navbar-links {
+    justify-content: space-evenly;
+}
+
+#navbar-links > a.current-page {
+    color: var(--main-pink);
     text-decoration: none;
 }
 
-.other-page {
+#navbar-links > a.other-page {
     color: var(--main-orange);
     text-decoration: none;
 }

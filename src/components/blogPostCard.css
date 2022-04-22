@@ -1,0 +1,26 @@
+.blog-post-card {
+    margin: 10px 0;
+}
+
+.blog-post-card > a {
+    background-color: var(--main-blue);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black !important;
+    text-decoration: none;
+    height: 100%;
+    padding: 10px 10px;
+    display: block;
+}
+
+.blog-post-card .title {
+    font-size: 2rem;
+}
+
+.blog-post-card .date-posted {
+    color: var(--main-pink);
+}
+
+/* .blog-post-card .blurb {
+
+} */

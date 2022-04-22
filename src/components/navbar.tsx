@@ -5,23 +5,25 @@ import './navbar.css';
 export default function Navbar() {
     return (
         <nav id='navbar'>
-            <NavLink
-                className={({ isActive }) =>
-                    isActive ? 'current-page' : 'other-page'
-                }
-                to='/'
-            >
-                Home
-            </NavLink>
-            {' | '}
-            <NavLink
-                className={({ isActive }) =>
-                    isActive ? 'current-page' : 'other-page'
-                }
-                to='/about'
-            >
-                About
-            </NavLink>
+            <div id='navbar-heading'>Axiomatic</div>
+            <div id='navbar-links'>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? 'current-page' : 'other-page'
+                    }
+                    to='/'
+                >
+                    Home
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? 'current-page' : 'other-page'
+                    }
+                    to='/about'
+                >
+                    About
+                </NavLink>
+            </div>
         </nav>
     );
 }

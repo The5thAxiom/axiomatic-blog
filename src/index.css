@@ -1,3 +1,9 @@
 body {
     background-color: var(--light-blue);
+    margin: 0;
+}
+
+main {
+    width: calc(100vw - 20px);
+    margin: 10px;
 }

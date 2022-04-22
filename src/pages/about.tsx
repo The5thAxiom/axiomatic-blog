@@ -7,6 +7,11 @@ export default function About() {
             <p>
                 Made with ❤️ by <a href='https://www.samridh.live'>Samridh</a>
             </p>
+            <h2>Credits</h2>
+            <p>
+                Title bar icon by{' '}
+                <a href='https://icon-icons.com/'>icon-icons</a>
+            </p>
             <h2>Copyright</h2>
             <p>
                 The source code and design of the website is open source under
