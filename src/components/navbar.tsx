@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
+
 export default function Navbar() {
     return (
-        <nav>
+        <nav id='navbar'>
             <NavLink
                 className={({ isActive }) =>
                     isActive ? 'current-page' : 'other-page'

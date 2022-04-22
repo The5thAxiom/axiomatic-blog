@@ -8,6 +8,7 @@ import BlogPost from './pages/blogPost';
 import Home from './pages/home';
 import { posts } from './posts';
 
+import './theme.css';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
