@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import About from './pages/about';
 import BlogPost from './pages/blogPost';
 import Home from './pages/home';
+import Filter from './pages/filter';
 import { posts } from './posts';
 
 import './theme.css';
@@ -36,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             />
                         ))}
                     </Route>
+                    {/* <Route path='/filter' element={<Filter />} /> */}
                     <Route path='/about' element={<About />} />
                 </Route>
             </Routes>
