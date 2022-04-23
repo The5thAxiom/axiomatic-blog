@@ -16,8 +16,8 @@ export default function BlogPost({
             {dateEdited.getTime() != datePosted.getTime() && (
                 <b>Last edited on {dateEdited.toDateString()}</b>
             )}
-            <p>{blurb}</p>
-            <p>{content}</p>
+            {blurb && <p>{blurb}</p>}
+            {content}
         </>
     );
 }

@@ -5,7 +5,9 @@ body {
 
 main {
     width: calc(100vw - 20px);
-    margin: 10px;
+    padding: 10px;
+    position: fixed;
+    overflow-y: scroll;
 }
 
 /* .blog-post-cards {
@@ -13,3 +15,25 @@ main {
     row-gap: 10px;
     column-gap: 10px;
 } */
+
+/* *** PCs *** */
+@media only screen and (min-width: 600px) {
+    :root {
+        --navbar-height: 10vh;
+    }
+    main {
+        top: 10vh;
+        height: calc(100vh - var(--navbar-height));
+    }
+}
+
+/* *** Phones *** */
+@media only screen and (max-width: 600px) {
+    :root {
+        --navbar-height: 15vh;
+    }
+    main {
+        top: 15vh;
+        height: calc(100vh - var(--navbar-height));
+    }
+}
