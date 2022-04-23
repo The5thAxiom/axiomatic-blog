@@ -4,7 +4,7 @@ import './navbar.css';
 
 const navbarLinks: { to: string; title: string }[] = [
     { to: '/', title: 'Home' },
-    // { to: '/filter', title: 'Filter' },
+    { to: '/search', title: 'Search' },
     { to: '/about', title: 'About' },
 ];
 
