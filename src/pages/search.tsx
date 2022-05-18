@@ -4,7 +4,7 @@ import BlogPostCards from '../components/blogPostCards';
 import { posts } from '../posts';
 
 export default function Search() {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const filter = Object.fromEntries([...(searchParams as any)]);
 
     const [searchString, setSearchString] = useState<string>('');
